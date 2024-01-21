@@ -11,4 +11,5 @@ body {
 .btn__primary {
   color: white;
   background-color: #000000;
+  font-weight: 500;
 }
