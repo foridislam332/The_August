@@ -1,6 +1,18 @@
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updatePassword, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from 'react';
-import app from "../Firebase/firebase.config";
+// import app from "../Firebase/firebase.config";
+import { initializeApp } from "firebase/app";
+const firebaseConfig = {
+    apiKey: import.meta.env.VITE_apiKey,
+    authDomain: import.meta.env.VITE_authDomain,
+    projectId: import.meta.env.VITE_projectId,
+    storageBucket: import.meta.env.VITE_storageBucket,
+    messagingSenderId: import.meta.env.VITE_messagingSenderId,
+    appId: import.meta.env.VITE_appId
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 import axios from "axios";
 
 export const AuthContext = createContext();
