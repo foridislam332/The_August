@@ -4,15 +4,15 @@ const ItemCart = ({ item }) => {
     const { image, name} = item;
     return (
       <div>
-        <div className="card rounded-none m-2 h-full glass">
-          <figure className="">
-            <img className="w-full h-96" src={image} alt="image!" />
+        <div className="card rounded-none m-2 h-96 glass">
+          <figure className="h-3/4">
+            <img className="h-full w-full" src={image} alt="image!" />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title text-2xl">{name}</h2>
+          <div className="p-2 h-1/4">
+            <h2 className=" font-bold text-center text-xl lg:text-2xl">{name}</h2>
             <p></p>
             <div className="card-actions justify-end">
-              <button className="btn bg-dark text-white">Buy now!</button>
+              <button className="btn btn-outline text-dark btn-sm border-2">Buy now!</button>
             </div>
           </div>
         </div>
