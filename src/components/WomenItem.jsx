@@ -7,12 +7,19 @@ import ItemCategory from "./ItemCategory";
 import SectionTitle from "./SectionTitle";
 import TrendingItems from "./TrendingItems";
 
-const Item = () => {
+const WomenItem = () => {
   const [item] = useItems();
-  const BestSeller = item.filter((item) => item.types === "BestSeller");
-  const Discount = item.filter((item) => item.types === "Discount");
-  const NewArrival = item.filter((item) => item.types === "NewArrival");
-  const All = item.filter((item) => item.types === "");
+  const category = "Women";
+
+  const BestSeller = item.filter(
+    (item) => item.types === "BestSeller" && item.category === category
+  );
+  const Discount = item.filter(
+    (item) => item.types === "Discount" && item.category === category
+  );
+  const NewArrival = item.filter(
+    (item) => item.types === "NewArrival" && item.category === category
+  );
 
   return (
     <section>
@@ -36,4 +43,4 @@ const Item = () => {
   );
 };
 
-export default Item;
+export default WomenItem;

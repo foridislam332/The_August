@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="footer p-10 bg-dark text-white flex justify-around items-center">
+      <div className="footer p-10 bg-dark text-white flex flex-col md:flex-row justify-around items-center">
         <div>
           <aside>
             <h1 className="text-2xl">The August</h1>
@@ -25,7 +25,7 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="username@site.com"
-                  className="input input-bordered join-item"
+                  className="input input-bordered join-item w-52"
                 />
                 <button className="btn btn-primary join-item">Subscribe</button>
               </div>

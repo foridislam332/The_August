@@ -10,7 +10,7 @@ const Header = () => {
 
     const icons = (
       <>
-        <ul className="flex gap-10 text-xl">
+        <ul className="flex gap-2 md:gap-4 lg:gap-10 text-xl">
           <li>
             <Link>
               <FaHouseFlag />

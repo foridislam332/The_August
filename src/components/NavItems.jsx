@@ -7,7 +7,7 @@ const NavItems = () => {
         <ActiveLink to="/men">Men</ActiveLink>
       </li>
       <li>
-        <ActiveLink to="/women">Women</ActiveLink>
+        <ActiveLink to="/">Women</ActiveLink>
       </li>
       <li>
         <ActiveLink to="/kids">Kids</ActiveLink>
